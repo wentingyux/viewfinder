@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Akshara!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Fixed 1920x1080 design surface, scaled to fit the viewport (assets are 2x / 1080p) -->
+  <div class="stage" id="stage">
+
+    <!-- Greeting (shown once the reel is seated) -->
+    <h1 class="title" id="title">Happy Birthday Akshara!!!</h1>
+    <p class="subtitle" id="subtitle">press the lever to advance the viewfinder</p>
+
+    <!-- Photos are created dynamically by app.js; they emerge from behind the
+         viewfinder and can be dragged out and arranged on the page. -->
+
+    <!-- The viewer: reel + viewfinder + lever -->
+    <div class="viewer" id="viewer">
+      <img class="reel" id="reel" src="images/reel-filled.png" alt="Photo reel — drag it down into the viewfinder" draggable="false" />
+      <img class="viewfinder-img" src="assets/viewfinder.png" alt="Viewfinder" draggable="false" />
+      <img class="lever" id="lever" src="assets/lever.png" alt="Lever" draggable="false" />
+      <div class="slot-target" id="slotTarget" aria-hidden="true"></div>
+    </div>
+
+    <!-- Drag-down hint arrow (shown before the reel is seated) -->
+    <svg class="arrow" id="arrow" viewBox="0 0 113 198" aria-hidden="true">
+      <polygon points="36,0 77,0 77,110 103,110 56,198 10,110 36,110" />
+    </svg>
+
+  </div>
+
+  <script src="images/manifest.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

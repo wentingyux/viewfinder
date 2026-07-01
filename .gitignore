@@ -1,0 +1,11 @@
+# Illustrator source & temp files (large, not needed to serve the site)
+*.ai
+~ai-*.tmp
+*.tmp
+
+# Local Claude Code settings
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
